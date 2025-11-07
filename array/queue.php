@@ -62,12 +62,13 @@ function printCollectionInfo(CollectionInterface $collection, string $name): voi
 
 echo "Queue\n";
 $queue = new Queue();
-$queue->enqueue("Customer 1");
-$queue->enqueue("Customer 2");
-$queue->enqueue("Customer 3");
+$queue->enqueue("Pembeli 1");
+$queue->enqueue("Pembeli 2");
+$queue->enqueue("Pembeli 3");
 echo "Peek: " . $queue->peek() . "\n";
 echo "Dequeue: " . $queue->dequeue() . "\n";
 echo "After dequeue, peek: " . $queue->peek() . "\n\n";
 
 printCollectionInfo($queue, "Queue");
+
 ?>
