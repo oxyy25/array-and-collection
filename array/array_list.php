@@ -85,9 +85,9 @@ function printCollectionInfo(CollectionInterface $collection, string $name): voi
 
 echo "Array List\n";
 $arrayList = new ArrayList();
-$arrayList->add("Java");
-$arrayList->add("PHP");
-$arrayList->add("Python");
+$arrayList->add("one");
+$arrayList->add("two");
+$arrayList->add("three");
 echo "Size: " . $arrayList->size() . "\n";
 echo "Get index 1: " . $arrayList->get(1) . "\n";
 echo "Contains 'PHP': " . ($arrayList->contains("PHP") ? "Yes" : "No") . "\n\n";
@@ -101,4 +101,5 @@ while ($iterator->hasNext()) {
 echo "\n\n";
 
 printCollectionInfo($arrayList, "Array List");
+
 ?>
