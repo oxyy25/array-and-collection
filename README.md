@@ -1,15 +1,15 @@
 # array-and-collection
-Array  :
-Arraylist
-LinkedList
-Stack
-Queue
-HashMap
+##Array  :
+- Arraylist
+- LinkedList
+- Stack
+- Queue
+- HashMap
 
-Collection :
-CollectionInterface
-ListInterface
-QueueInterface
-MapInterface
-IteratorInterface
+##Collection :
+- CollectionInterface
+- ListInterface
+- QueueInterface
+- MapInterface
+- IteratorInterface
 
