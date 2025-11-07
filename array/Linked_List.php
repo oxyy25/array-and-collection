@@ -144,9 +144,10 @@ class LinkedList implements ListInterface
 
 echo "LinkedList\n";
 $linkedList = new LinkedList();
-$linkedList->addFirst("First");
-$linkedList->addLast("Last");
-$linkedList->add("Middle");
+$linkedList->addFirst("Akbar");
+$linkedList->addLast("Abyan");
+$linkedList->add("Hafish");
 echo "Size: " . $linkedList->size() . "\n";
 echo "Elements: " . implode(", ", $linkedList->toArray()) . "\n\n";
+
 ?>
