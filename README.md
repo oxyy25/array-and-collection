@@ -1,12 +1,12 @@
 # array-and-collection
-##Array  :
+## Array  :
 - Arraylist
 - LinkedList
 - Stack
 - Queue
 - HashMap
 
-##Collection :
+## Collection :
 - CollectionInterface
 - ListInterface
 - QueueInterface
