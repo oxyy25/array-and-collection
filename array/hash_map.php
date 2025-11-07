@@ -77,10 +77,11 @@ class HashMap implements MapInterface
 
 echo "HashMap\n";
 $hashMap = new HashMap();
-$hashMap->put("nim", "123456");
-$hashMap->put("nama", "Budi");
+$hashMap->put("nim", "321453");
+$hashMap->put("nama", "Ahmad");
 $hashMap->put("jurusan", "Informatika");
 echo "Get 'nama': " . $hashMap->get("nama") . "\n";
 echo "Contains key 'nim': " . ($hashMap->containsKey("nim") ? "Yes" : "No") . "\n";
 echo "All keys: " . implode(", ", $hashMap->keys()) . "\n\n";
+
 ?>
