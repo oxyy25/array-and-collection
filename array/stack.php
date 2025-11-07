@@ -54,6 +54,13 @@ class Stack implements StackInterface
     }
 }
 
+function printCollectionInfo(CollectionInterface $collection, string $name): void{
+    echo "Collection: $name\n";
+    echo "Size: " . $collection->size() . "\n";
+    echo "Empty: " . ($collection->isEmpty() ? "Yes" : "No") . "\n";
+    echo "Elements: " . implode(", ", $collection->toArray()) . "\n";
+}
+
 echo "Stack\n";
 $stack = new Stack();
 $stack->push("Page 1");
@@ -62,4 +69,6 @@ $stack->push("Page 3");
 echo "Peek: " . $stack->peek() . "\n";
 echo "Pop: " . $stack->pop() . "\n";
 echo "After pop, peek: " . $stack->peek() . "\n\n";
+
+printCollectionInfo($stack, "Stack");
 ?>

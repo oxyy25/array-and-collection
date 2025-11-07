@@ -53,6 +53,13 @@ class Queue implements QueueInterface
     }
 }
 
+function printCollectionInfo(CollectionInterface $collection, string $name): void{
+    echo "Collection: $name\n";
+    echo "Size: " . $collection->size() . "\n";
+    echo "Empty: " . ($collection->isEmpty() ? "Yes" : "No") . "\n";
+    echo "Elements: " . implode(", ", $collection->toArray()) . "\n";
+}
+
 echo "Queue\n";
 $queue = new Queue();
 $queue->enqueue("Customer 1");
@@ -61,4 +68,6 @@ $queue->enqueue("Customer 3");
 echo "Peek: " . $queue->peek() . "\n";
 echo "Dequeue: " . $queue->dequeue() . "\n";
 echo "After dequeue, peek: " . $queue->peek() . "\n\n";
+
+printCollectionInfo($queue, "Queue");
 ?>

@@ -76,7 +76,14 @@ class ArrayList implements ListInterface
     }
 }
 
-echo "ArrayList\n";
+function printCollectionInfo(CollectionInterface $collection, string $name): void{
+    echo "Collection: $name\n";
+    echo "Size: " . $collection->size() . "\n";
+    echo "Empty: " . ($collection->isEmpty() ? "Yes" : "No") . "\n";
+    echo "Elements: " . implode(", ", $collection->toArray()) . "\n";
+}
+
+echo "Array List\n";
 $arrayList = new ArrayList();
 $arrayList->add("Java");
 $arrayList->add("PHP");
@@ -92,4 +99,6 @@ while ($iterator->hasNext()) {
     echo $iterator->next() . " ";
 }
 echo "\n\n";
+
+printCollectionInfo($arrayList, "Array List");
 ?>
